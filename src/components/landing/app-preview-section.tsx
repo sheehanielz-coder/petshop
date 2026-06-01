@@ -22,7 +22,7 @@ const pets = [
     { icon: Activity, label: "Bermain", time: "13:00", done: false },
     { icon: Camera, label: "Foto", time: "15:00", done: false },
   ]},
-  { name: "Claire", breed: "British Shorthair", emoji: "🐱", image: "/images/pets/kucing/claire.jpg", tag: "Si Anggun", tagColor: "bg-amber-100 text-violet-700", status: "Menginap", checkIn: "24 Mei", duration: "3H 2J", progress: 3, total: 7, progressColor: "bg-amber-600", activities: [
+  { name: "Claire", breed: "British Shorthair", emoji: "🐱", image: "/images/pets/kucing/claire.jpg", tag: "Si Anggun", tagColor: "bg-amber-100 text-amber-800", status: "Menginap", checkIn: "24 Mei", duration: "3H 2J", progress: 3, total: 7, progressColor: "bg-amber-600", activities: [
     { icon: Utensils, label: "Makan", time: "07:45", done: true },
     { icon: Scissors, label: "Grooming", time: "09:00", done: true },
     { icon: Activity, label: "Bermain", time: "13:00", done: true },
