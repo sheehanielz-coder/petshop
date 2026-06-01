@@ -12,7 +12,7 @@ const steps = [
     title: "Pilih Layanan",
     description:
       "Cukup pilih layanan yang kamu butuhkan — hotel, grooming, pickup, atau shop. Semua ada di satu platform.",
-    color: "from-violet-500 to-purple-600",
+    color: "from-amber-700 to-amber-900",
   },
   {
     icon: PawPrint,
@@ -51,7 +51,7 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             How It Works
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -65,7 +65,7 @@ export function HowItWorks() {
 
         <div className="relative">
           {/* Connector line */}
-          <div className="hidden lg:block absolute top-20 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-violet-200 via-pink-200 to-emerald-200 dark:from-violet-800 dark:via-pink-800 dark:to-emerald-800" />
+          <div className="hidden lg:block absolute top-20 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-amber-200 via-orange-200 to-emerald-200 dark:from-amber-800 dark:via-orange-800 dark:to-emerald-800" />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, i) => (
@@ -108,7 +108,7 @@ export function HowItWorks() {
           transition={{ delay: 0.6 }}
           className="text-center mt-14"
         >
-          <Button size="lg" asChild className="shadow-xl shadow-purple-500/20 group">
+          <Button size="lg" asChild className="shadow-xl shadow-amber-700/20 group">
             <Link href="/hotel">
               Mulai Sekarang — Gratis
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

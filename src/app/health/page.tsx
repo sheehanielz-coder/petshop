@@ -25,8 +25,8 @@ const features = [
     icon: Syringe,
     title: "Jadwal Vaksinasi",
     description: "Jangan pernah melewatkan vaksin penting. Sistem kami mengingatkan kamu jauh hari sebelum jadwal tiba.",
-    color: "from-violet-500 to-purple-600",
-    bg: "bg-violet-50 dark:bg-violet-900/20",
+    color: "from-amber-700 to-amber-900",
+    bg: "bg-amber-50 dark:bg-amber-900/20",
     items: ["Reminder otomatis", "Tracking vaksin rabies, distemper, dll", "Sertifikat digital vaksin", "Sinkronisasi dengan klinik"],
   },
   {

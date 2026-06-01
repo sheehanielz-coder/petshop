@@ -65,7 +65,7 @@ export function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             Testimoni
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -108,7 +108,7 @@ export function TestimonialsSection() {
                 <div>
                   <p className="text-sm font-semibold text-gray-900 dark:text-white">{t.name}</p>
                   <p className="text-xs text-muted-foreground">{t.role}</p>
-                  <p className="text-xs text-purple-600 dark:text-purple-400 mt-0.5">{t.pet}</p>
+                  <p className="text-xs text-amber-900 dark:text-amber-700 mt-0.5">{t.pet}</p>
                 </div>
               </div>
             </motion.div>

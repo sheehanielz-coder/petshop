@@ -11,7 +11,7 @@ import { Truck, MapPin, Clock, Shield, Phone, CheckCircle2, ChevronRight, Star }
 
 const features = [
   { icon: Clock, title: "Jadwal Fleksibel", desc: "Pilih waktu pickup sesuai jadwalmu — pagi, siang, atau sore. Kami siap 7 hari seminggu.", color: "from-blue-500 to-cyan-600" },
-  { icon: MapPin, title: "Tracking Real-time", desc: "Pantau lokasi driver dan status perjalanan hewanmu langsung dari app.", color: "from-violet-500 to-purple-600" },
+  { icon: MapPin, title: "Tracking Real-time", desc: "Pantau lokasi driver dan status perjalanan hewanmu langsung dari app.", color: "from-amber-700 to-amber-900" },
   { icon: Shield, title: "Driver Tersertifikasi", desc: "Semua driver kami sudah terlatih khusus menangani hewan peliharaan dengan aman.", color: "from-emerald-500 to-teal-600" },
   { icon: Phone, title: "Update Perjalanan", desc: "Foto dan update kondisi hewanmu dikirim selama perjalanan biar kamu tenang.", color: "from-pink-500 to-rose-600" },
 ];

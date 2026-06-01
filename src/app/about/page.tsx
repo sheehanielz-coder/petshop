@@ -51,16 +51,16 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-                  <Users className="w-4 h-4 text-purple-500" /> Tim 50+ orang
+                  <Users className="w-4 h-4 text-amber-800" /> Tim 50+ orang
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-                  <MapPin className="w-4 h-4 text-purple-500" /> 5 kota di Indonesia
+                  <MapPin className="w-4 h-4 text-amber-800" /> 5 kota di Indonesia
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-                  <Heart className="w-4 h-4 text-purple-500" /> 12.000+ happy pets
+                  <Heart className="w-4 h-4 text-amber-800" /> 12.000+ happy pets
                 </div>
                 <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
-                  <Award className="w-4 h-4 text-purple-500" /> #1 Pet Platform 2024
+                  <Award className="w-4 h-4 text-amber-800" /> #1 Pet Platform 2024
                 </div>
               </div>
             </motion.div>
@@ -112,7 +112,7 @@ export default function AboutPage() {
                   <div className="flex-none w-16 text-right">
                     <span className="text-sm font-bold gradient-text">{m.year}</span>
                   </div>
-                  <div className="flex-none w-px bg-purple-200 dark:bg-purple-800 self-stretch mx-2" />
+                  <div className="flex-none w-px bg-amber-200 dark:bg-amber-800 self-stretch mx-2" />
                   <div className="bg-white dark:bg-gray-950 rounded-2xl p-4 flex-1 shadow-sm border border-gray-100 dark:border-gray-800">
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-xl">{m.emoji}</span>
@@ -143,7 +143,7 @@ export default function AboutPage() {
                 whileHover={{ y: -4 }}
                 className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 text-center"
               >
-                <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-100 to-pink-100 dark:from-purple-900/30 dark:to-pink-900/30 flex items-center justify-center text-4xl mx-auto mb-3 overflow-hidden">
+                <div className="relative w-20 h-20 rounded-2xl bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/30 dark:to-orange-900/30 flex items-center justify-center text-4xl mx-auto mb-3 overflow-hidden">
                   <span>{t.emoji}</span>
                   <img
                     src={t.image}
@@ -153,7 +153,7 @@ export default function AboutPage() {
                   />
                 </div>
                 <h3 className="font-bold text-gray-900 dark:text-white">{t.name}</h3>
-                <p className="text-sm text-purple-600 dark:text-purple-400 font-medium mb-2">{t.role}</p>
+                <p className="text-sm text-amber-900 dark:text-amber-700 font-medium mb-2">{t.role}</p>
                 <p className="text-xs text-muted-foreground">{t.desc}</p>
               </motion.div>
             ))}
@@ -166,9 +166,9 @@ export default function AboutPage() {
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div className="text-5xl mb-4">🐾</div>
               <h2 className="text-3xl font-bold mb-3">Bergabunglah Bersama Kami</h2>
-              <p className="text-purple-100 mb-8">Jadilah bagian dari komunitas 12.000+ pet owner yang sudah mempercayakan perawatan hewan peliharaan mereka kepada Central Pet.</p>
+              <p className="text-amber-100 mb-8">Jadilah bagian dari komunitas 12.000+ pet owner yang sudah mempercayakan perawatan hewan peliharaan mereka kepada Central Pet.</p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <Button size="lg" asChild className="bg-white text-purple-700 hover:bg-purple-50 shadow-xl">
+                <Button size="lg" asChild className="bg-white text-amber-950 hover:bg-amber-50 shadow-xl">
                   <Link href="/hotel">Mulai Sekarang <ChevronRight className="w-4 h-4" /></Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="border-white/40 text-white hover:bg-white/10">

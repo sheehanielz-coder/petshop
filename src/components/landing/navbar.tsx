@@ -21,7 +21,6 @@ const navLinks = [
       { label: "Kesehatan", href: "/health", icon: Heart, desc: "Rekam medis & wellness hewan" },
     ],
   },
-  { label: "Membership", href: "/membership" },
   { label: "Blog", href: "/blog" },
 ];
 
@@ -52,7 +51,7 @@ export function LandingNavbar() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center shadow-lg shadow-purple-500/30 group-hover:scale-110 transition-transform">
+            <div className="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center shadow-lg shadow-amber-700/30 group-hover:scale-110 transition-transform">
               <PawPrint className="w-5 h-5 text-white" />
             </div>
             <span className="text-xl font-bold gradient-text hidden sm:block">Central Pet</span>
@@ -71,7 +70,7 @@ export function LandingNavbar() {
                   href={link.href}
                   className={cn(
                     "flex items-center gap-1 px-4 py-2 rounded-xl text-sm font-medium transition-colors",
-                    "text-gray-700 dark:text-gray-300 hover:text-purple-700 dark:hover:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20"
+                    "text-gray-700 dark:text-gray-300 hover:text-amber-950 dark:hover:text-amber-700 hover:bg-amber-50 dark:hover:bg-amber-900/20"
                   )}
                 >
                   {link.label}
@@ -90,13 +89,13 @@ export function LandingNavbar() {
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors group"
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors group"
                       >
                         <div className="w-9 h-9 rounded-lg gradient-brand flex items-center justify-center shrink-0 shadow-sm">
                           <child.icon className="w-4 h-4 text-white" />
                         </div>
                         <div>
-                          <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">
+                          <p className="text-sm font-semibold text-gray-900 dark:text-white group-hover:text-amber-950 dark:group-hover:text-amber-700 transition-colors">
                             {child.label}
                           </p>
                           <p className="text-xs text-muted-foreground mt-0.5">{child.desc}</p>
@@ -121,7 +120,7 @@ export function LandingNavbar() {
             {/* Mobile Toggle */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-xl hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+              className="lg:hidden p-2 rounded-xl hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors"
             >
               {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
@@ -144,7 +143,7 @@ export function LandingNavbar() {
                   <Link
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+                    className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -153,7 +152,7 @@ export function LandingNavbar() {
                       key={child.label}
                       href={child.href}
                       onClick={() => setMobileOpen(false)}
-                      className="flex items-center gap-3 px-7 py-2 rounded-xl text-sm text-gray-500 dark:text-gray-400 hover:bg-purple-50 dark:hover:bg-purple-900/20 transition-colors"
+                      className="flex items-center gap-3 px-7 py-2 rounded-xl text-sm text-gray-500 dark:text-gray-400 hover:bg-amber-50 dark:hover:bg-amber-900/20 transition-colors"
                     >
                       <child.icon className="w-4 h-4" />
                       {child.label}

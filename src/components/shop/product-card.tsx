@@ -42,7 +42,7 @@ export function ProductCard({ product }: { product: ProductWithCategory }) {
   return (
     <Card className="overflow-hidden border-0 shadow-sm card-hover group h-full flex flex-col">
       {/* Product image */}
-      <div className="relative h-44 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 flex items-center justify-center">
+      <div className="relative h-44 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 flex items-center justify-center">
         <span className="text-6xl">{emoji}</span>
 
         {/* Badges */}
@@ -65,10 +65,10 @@ export function ProductCard({ product }: { product: ProductWithCategory }) {
       </div>
 
       <CardContent className="p-4 flex flex-col flex-1">
-        <p className="text-xs text-purple-600 dark:text-purple-400 font-medium mb-1">
+        <p className="text-xs text-amber-900 dark:text-amber-700 font-medium mb-1">
           {product.category.name}
         </p>
-        <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">
+        <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-1 line-clamp-2 group-hover:text-amber-950 dark:group-hover:text-amber-700 transition-colors">
           {product.name}
         </h3>
 

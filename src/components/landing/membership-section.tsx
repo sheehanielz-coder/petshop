@@ -42,8 +42,8 @@ const tiers = [
     name: "Platinum",
     price: "499.000",
     period: "/bulan",
-    gradient: "from-violet-500 to-purple-700",
-    borderColor: "border-purple-300 dark:border-purple-700",
+    gradient: "from-amber-700 to-stone-900",
+    borderColor: "border-amber-300 dark:border-amber-700",
     popular: false,
     benefits: [
       "Diskon 30% semua layanan",
@@ -68,7 +68,7 @@ export function MembershipSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             Paket Membership
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -127,7 +127,7 @@ export function MembershipSection() {
 
               <Button
                 variant={tier.popular ? "default" : "outline"}
-                className={cn("w-full", tier.popular && "shadow-lg shadow-purple-500/20")}
+                className={cn("w-full", tier.popular && "shadow-lg shadow-amber-700/20")}
                 asChild
               >
                 <Link href="/membership">Pilih {tier.name}</Link>

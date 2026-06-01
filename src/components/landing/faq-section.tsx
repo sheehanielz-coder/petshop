@@ -53,7 +53,7 @@ export function FAQSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             FAQ
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -72,7 +72,7 @@ export function FAQSection() {
               className={cn(
                 "rounded-2xl border transition-all duration-200",
                 open === i
-                  ? "border-purple-200 dark:border-purple-800 bg-purple-50/50 dark:bg-purple-900/10"
+                  ? "border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-900/10"
                   : "border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900"
               )}
             >
@@ -85,7 +85,7 @@ export function FAQSection() {
                 </span>
                 <ChevronDown
                   className={cn(
-                    "w-5 h-5 shrink-0 text-purple-500 transition-transform duration-200",
+                    "w-5 h-5 shrink-0 text-amber-800 transition-transform duration-200",
                     open === i && "rotate-180"
                   )}
                 />

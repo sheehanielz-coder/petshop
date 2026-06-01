@@ -29,7 +29,7 @@ export function LocationSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-12"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             Temukan Kami
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -53,12 +53,12 @@ export function LocationSection() {
             {/* Address card */}
             <div className="bg-white dark:bg-gray-950 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-sm">
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-purple-500/30">
+                <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-amber-700/30">
                   <MapPin className="w-5 h-5 text-white" />
                 </div>
                 <div>
                   <p className="font-bold text-gray-900 dark:text-white text-sm">Alamat</p>
-                  <p className="text-xs text-purple-500 font-medium">Kantor & Layanan Utama</p>
+                  <p className="text-xs text-amber-800 font-medium">Kantor & Layanan Utama</p>
                 </div>
               </div>
               <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed mb-5">
@@ -122,7 +122,7 @@ export function LocationSection() {
                 <a href="mailto:hello@centralpet.id"
                   className="flex items-center justify-between group">
                   <span className="text-xs text-muted-foreground">Email</span>
-                  <span className="text-xs font-medium text-gray-800 dark:text-gray-200 group-hover:text-purple-500 transition-colors">hello@centralpet.id</span>
+                  <span className="text-xs font-medium text-gray-800 dark:text-gray-200 group-hover:text-amber-800 transition-colors">hello@centralpet.id</span>
                 </a>
               </div>
               <Button variant="outline" size="sm" className="w-full" asChild>
@@ -141,7 +141,7 @@ export function LocationSection() {
             transition={{ duration: 0.6, delay: 0.15 }}
             className="lg:col-span-2"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/10 border border-gray-100 dark:border-gray-800 h-[420px] md:h-[580px]">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-700/10 border border-gray-100 dark:border-gray-800 h-[420px] md:h-[580px]">
               {/* iframe */}
               <iframe
                 src={MAPS_EMBED}
@@ -159,7 +159,7 @@ export function LocationSection() {
                 <motion.div
                   animate={{ scale: [1, 1.4, 1], opacity: [0.5, 0.1, 0.5] }}
                   transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-                  className="w-12 h-12 rounded-full bg-purple-500/50 border-2 border-purple-400"
+                  className="w-12 h-12 rounded-full bg-amber-500/50 border-2 border-amber-700"
                 />
               </div>
 
@@ -177,9 +177,9 @@ export function LocationSection() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-5 py-2.5 bg-white dark:bg-gray-900 rounded-full shadow-lg text-sm font-bold text-gray-900 dark:text-white border border-gray-100 dark:border-gray-700 hover:shadow-xl transition-shadow"
                 >
-                  <Navigation className="w-4 h-4 text-purple-500" />
+                  <Navigation className="w-4 h-4 text-amber-800" />
                   Buka di Google Maps
-                  <ArrowRight className="w-3.5 h-3.5 text-purple-500" />
+                  <ArrowRight className="w-3.5 h-3.5 text-amber-800" />
                 </a>
               </motion.div>
             </div>

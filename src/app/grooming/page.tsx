@@ -23,7 +23,7 @@ const services = [
     name: "Grooming Full",
     price: 150000,
     icon: Scissors,
-    color: "from-violet-500 to-purple-600",
+    color: "from-amber-700 to-amber-900",
     duration: "90 menit",
     popular: true,
     includes: ["Semua di Basic", "Potong & styling rambut", "Kondisioner dalam", "Sikat gigi", "Perawatan telapak kaki"],
@@ -63,7 +63,7 @@ export default function GroomingPage() {
         <section className="py-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, i) => (
-              <Card key={service.name} className={`border-0 shadow-sm ${service.popular ? "ring-2 ring-purple-500 shadow-xl shadow-purple-500/10" : ""} h-full flex flex-col`}>
+              <Card key={service.name} className={`border-0 shadow-sm ${service.popular ? "ring-2 ring-amber-700 shadow-xl shadow-amber-700/10" : ""} h-full flex flex-col`}>
                 {service.popular && (
                   <div className="text-center py-1.5 gradient-brand">
                     <span className="text-xs font-bold text-white">Most Popular</span>

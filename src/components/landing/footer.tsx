@@ -13,7 +13,6 @@ const footerLinks = {
   Company: [
     { label: "About Us", href: "/about" },
     { label: "Blog", href: "/blog" },
-    { label: "Membership", href: "/membership" },
     { label: "Contact", href: "/contact" },
   ],
   Support: [
@@ -48,10 +47,10 @@ export function Footer() {
             </p>
             <div className="space-y-2">
               <a href="mailto:hello@centralpet.id" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
-                <Mail className="w-4 h-4 text-purple-400" /> hello@centralpet.id
+                <Mail className="w-4 h-4 text-amber-700" /> hello@centralpet.id
               </a>
               <a href="tel:+6221123456" className="flex items-center gap-2 text-sm hover:text-white transition-colors">
-                <Phone className="w-4 h-4 text-purple-400" /> +62 21 1234 5678
+                <Phone className="w-4 h-4 text-amber-700" /> +62 21 1234 5678
               </a>
               <a
                 href="https://www.google.com/maps/dir/?api=1&destination=Jl.+Sukapura+No.26%2C+Sukapura%2C+Kec.+Dayeuhkolot%2C+Kabupaten+Bandung%2C+Jawa+Barat+40267%2C+Indonesia"
@@ -59,7 +58,7 @@ export function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-start gap-2 text-sm hover:text-white transition-colors"
               >
-                <MapPin className="w-4 h-4 text-purple-400 mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 text-amber-700 mt-0.5 shrink-0" />
                 Jl. Sukapura No.26, Dayeuhkolot, Bandung
               </a>
             </div>
@@ -72,7 +71,7 @@ export function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="w-9 h-9 rounded-xl bg-gray-800 hover:bg-purple-700 flex items-center justify-center transition-all hover:scale-110 text-xs font-bold text-gray-400 hover:text-white"
+                  className="w-9 h-9 rounded-xl bg-gray-800 hover:bg-amber-800 flex items-center justify-center transition-all hover:scale-110 text-xs font-bold text-gray-400 hover:text-white"
                 >
                   {social.label}
                 </a>

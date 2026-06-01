@@ -11,7 +11,7 @@ import { Mail, Phone, MapPin, MessageCircle, Clock, CheckCircle2, Sparkles } fro
 
 const contactMethods = [
   { icon: MessageCircle, title: "WhatsApp", desc: "Chat langsung dengan tim kami", value: "+62 812-3456-7890", href: "https://wa.me/6281234567890", color: "bg-green-500", badge: "Fastest" },
-  { icon: Mail, title: "Email", desc: "Kami balas dalam 1-2 jam kerja", value: "hello@centralpet.id", href: "mailto:hello@centralpet.id", color: "bg-purple-500", badge: null },
+  { icon: Mail, title: "Email", desc: "Kami balas dalam 1-2 jam kerja", value: "hello@centralpet.id", href: "mailto:hello@centralpet.id", color: "bg-amber-500", badge: null },
   { icon: Phone, title: "Telepon", desc: "Senin–Sabtu, 08.00–20.00 WIB", value: "+62 21 1234 5678", href: "tel:+622112345678", color: "bg-blue-500", badge: null },
   { icon: MapPin, title: "Kantor Pusat", desc: "Kunjungi kami langsung", value: "Jl. Sukapura No.26, Dayeuhkolot, Bandung", href: "https://www.google.com/maps/dir/?api=1&destination=Jl.+Sukapura+No.26%2C+Sukapura%2C+Kec.+Dayeuhkolot%2C+Kabupaten+Bandung%2C+Jawa+Barat+40267%2C+Indonesia", color: "bg-pink-500", badge: null },
 ];
@@ -68,7 +68,7 @@ export default function ContactPage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
                 whileHover={{ y: -6 }}
-                className="block bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-800 transition-all group"
+                className="block bg-gray-50 dark:bg-gray-900 rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-all group"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className={`w-10 h-10 ${m.color} rounded-xl flex items-center justify-center`}>
@@ -78,7 +78,7 @@ export default function ContactPage() {
                     <span className="text-xs font-bold px-2 py-0.5 bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 rounded-full">{m.badge}</span>
                   )}
                 </div>
-                <h3 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">{m.title}</h3>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-1 group-hover:text-amber-950 dark:group-hover:text-amber-700 transition-colors">{m.title}</h3>
                 <p className="text-xs text-muted-foreground mb-2">{m.desc}</p>
                 <p className="text-sm font-medium text-gray-700 dark:text-gray-300">{m.value}</p>
               </motion.a>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                       placeholder="Tuliskan pertanyaan atau pesanmu di sini..."
                       rows={5}
                       required
-                      className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-purple-500/30 focus:border-purple-500 resize-none"
+                      className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-amber-700/30 focus:border-amber-700 resize-none"
                     />
                   </div>
                   <Button type="submit" className="w-full" size="lg" loading={loading} disabled={!name || !email || !message}>
@@ -151,7 +151,7 @@ export default function ContactPage() {
                     className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-5 border border-gray-100 dark:border-gray-800"
                   >
                     <div className="flex gap-3">
-                      <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-amber-800 shrink-0 mt-0.5" />
                       <div>
                         <p className="font-semibold text-gray-900 dark:text-white mb-1 text-sm">{faq.q}</p>
                         <p className="text-sm text-muted-foreground">{faq.a}</p>
@@ -160,14 +160,14 @@ export default function ContactPage() {
                   </motion.div>
                 ))}
               </div>
-              <div className="mt-6 p-4 bg-purple-50 dark:bg-purple-900/20 rounded-2xl border border-purple-100 dark:border-purple-800">
+              <div className="mt-6 p-4 bg-amber-50 dark:bg-amber-900/20 rounded-2xl border border-amber-100 dark:border-amber-800">
                 <div className="flex items-center gap-2 mb-1">
-                  <Clock className="w-4 h-4 text-purple-600" />
-                  <span className="text-sm font-semibold text-purple-700 dark:text-purple-400">Jam Operasional</span>
+                  <Clock className="w-4 h-4 text-amber-900" />
+                  <span className="text-sm font-semibold text-amber-950 dark:text-amber-700">Jam Operasional</span>
                 </div>
                 <p className="text-sm text-muted-foreground">Senin–Sabtu: 08.00–20.00 WIB</p>
                 <p className="text-sm text-muted-foreground">Minggu & Libur: 09.00–17.00 WIB</p>
-                <p className="text-xs text-purple-600 dark:text-purple-400 mt-2 font-medium">WhatsApp tersedia 24/7 untuk kondisi darurat 🚨</p>
+                <p className="text-xs text-amber-900 dark:text-amber-700 mt-2 font-medium">WhatsApp tersedia 24/7 untuk kondisi darurat 🚨</p>
               </div>
             </motion.div>
           </div>
@@ -182,11 +182,11 @@ export default function ContactPage() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-              <MapPin className="w-6 h-6 text-purple-500" />
+              <MapPin className="w-6 h-6 text-amber-800" />
               Lokasi Kami
             </h2>
 
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-purple-500/10 border border-gray-100 dark:border-gray-800">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-700/10 border border-gray-100 dark:border-gray-800">
               {/* Map iframe */}
               <div className="relative h-[420px] md:h-[500px]">
                 <iframe
@@ -205,7 +205,7 @@ export default function ContactPage() {
                   <motion.div
                     animate={{ scale: [1, 1.15, 1], opacity: [0.6, 0.2, 0.6] }}
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                    className="w-14 h-14 rounded-full bg-purple-500/40 border-2 border-purple-500"
+                    className="w-14 h-14 rounded-full bg-amber-500/40 border-2 border-amber-700"
                   />
                 </div>
               </div>
@@ -219,12 +219,12 @@ export default function ContactPage() {
                 className="absolute top-5 left-5 bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-5 max-w-xs w-full border border-gray-100 dark:border-gray-800"
               >
                 <div className="flex items-center gap-2 mb-3">
-                  <div className="w-8 h-8 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-purple-500/30">
+                  <div className="w-8 h-8 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-amber-700/30">
                     <MapPin className="w-4 h-4 text-white" />
                   </div>
                   <div>
                     <p className="text-xs font-bold text-gray-900 dark:text-white">Central Pet</p>
-                    <p className="text-[10px] text-purple-500 font-medium">Kantor & Layanan Utama</p>
+                    <p className="text-[10px] text-amber-800 font-medium">Kantor & Layanan Utama</p>
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground leading-relaxed mb-4">

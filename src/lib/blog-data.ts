@@ -37,7 +37,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     viewCount: 1240,
     emoji: "🏨",
-    gradient: "from-purple-400 to-violet-500",
+    gradient: "from-amber-600 to-amber-800",
     tags: ["hotel", "dog", "tips", "first time"],
     relatedSlugs: ["healthy-pet-routine", "introduce-new-pet"],
     content: [
@@ -279,7 +279,7 @@ export const blogPosts: BlogPost[] = [
     readTime: "5 min read",
     viewCount: 1580,
     emoji: "🌈",
-    gradient: "from-violet-400 to-purple-500",
+    gradient: "from-amber-600 to-amber-800",
     tags: ["routine", "health", "lifestyle", "exercise", "diet"],
     relatedSlugs: ["diet-senior-dogs", "essential-vaccines-pets"],
     content: [

@@ -59,7 +59,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-          className="w-20 h-20 rounded-2xl gradient-brand flex items-center justify-center mx-auto mb-6 shadow-xl shadow-purple-500/30"
+          className="w-20 h-20 rounded-2xl gradient-brand flex items-center justify-center mx-auto mb-6 shadow-xl shadow-amber-700/30"
         >
           <Sparkles className="w-10 h-10 text-white" />
         </motion.div>
@@ -70,7 +70,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
         <p className="text-sm text-muted-foreground mb-8">
           Tim kami akan menghubungi kamu di <span className="font-medium">{phone}</span> dalam 1–2 jam untuk konfirmasi reservasi.
         </p>
-        <div className="bg-purple-50 dark:bg-purple-900/20 rounded-2xl p-4 text-sm text-left space-y-2 mb-8">
+        <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-4 text-sm text-left space-y-2 mb-8">
           <div className="flex justify-between">
             <span className="text-muted-foreground">Kamar</span>
             <span className="font-medium">{activeRoom?.name}</span>
@@ -84,7 +84,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
             <span className="font-medium">{new Date(checkOut).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" })}</span>
           </div>
           {total > 0 && (
-            <div className="flex justify-between border-t border-purple-200 dark:border-purple-700 pt-2 font-bold">
+            <div className="flex justify-between border-t border-amber-200 dark:border-amber-700 pt-2 font-bold">
               <span>Estimasi Total</span>
               <span className="gradient-text">{formatCurrency(total)}</span>
             </div>
@@ -104,7 +104,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
           {/* Room Type */}
           <div>
             <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 block flex items-center gap-1.5">
-              <Hotel className="w-4 h-4 text-purple-500" /> Tipe Kamar
+              <Hotel className="w-4 h-4 text-amber-800" /> Tipe Kamar
             </label>
             <div className="space-y-2">
               {rooms.map((room) => (
@@ -114,14 +114,14 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
                   onClick={() => setRoomId(room.id)}
                   className={`w-full flex items-center justify-between p-3.5 rounded-xl border-2 text-left transition-all ${
                     roomId === room.id
-                      ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20"
+                      ? "border-amber-700 bg-amber-50 dark:bg-amber-900/20"
                       : "border-gray-200 dark:border-gray-700 hover:border-gray-300"
                   }`}
                 >
                   <span className="text-sm font-medium text-gray-900 dark:text-white">{room.name}</span>
                   <div className="flex items-center gap-2">
                     <span className="text-sm font-bold gradient-text">{formatCurrency(room.pricePerNight)}/malam</span>
-                    {roomId === room.id && <Check className="w-4 h-4 text-purple-500" />}
+                    {roomId === room.id && <Check className="w-4 h-4 text-amber-800" />}
                   </div>
                 </button>
               ))}
@@ -132,7 +132,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5 block">
-                <PawPrint className="inline w-4 h-4 mr-1 text-purple-500" /> Nama Hewan *
+                <PawPrint className="inline w-4 h-4 mr-1 text-amber-800" /> Nama Hewan *
               </label>
               <Input placeholder="e.g. Mochi, Buddy..." value={petName} onChange={(e) => setPetName(e.target.value)} required />
             </div>
@@ -151,7 +151,7 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
           <div className="grid grid-cols-2 gap-4">
             <div>
               <label className="text-sm font-medium text-gray-700 dark:text-gray-300 mb-1.5 block">
-                <Calendar className="inline w-4 h-4 mr-1 text-purple-500" /> Check-in *
+                <Calendar className="inline w-4 h-4 mr-1 text-amber-800" /> Check-in *
               </label>
               <Input type="date" value={checkIn} onChange={(e) => setCheckIn(e.target.value)} min={new Date().toISOString().split("T")[0]} required />
             </div>
@@ -175,13 +175,13 @@ export function HotelBookingForm({ rooms, preselectedRoomId }: Props) {
       </Card>
 
       {activeRoom && nights > 0 && (
-        <Card className="border-purple-100 dark:border-purple-900 bg-purple-50/50 dark:bg-purple-900/10 shadow-sm">
+        <Card className="border-amber-100 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-900/10 shadow-sm">
           <CardContent className="p-5 text-sm space-y-2">
             <div className="flex justify-between text-muted-foreground">
               <span>{formatCurrency(activeRoom.pricePerNight)} × {nights} malam</span>
               <span>{formatCurrency(total)}</span>
             </div>
-            <div className="flex justify-between font-bold text-gray-900 dark:text-white pt-2 border-t border-purple-200 dark:border-purple-800">
+            <div className="flex justify-between font-bold text-gray-900 dark:text-white pt-2 border-t border-amber-200 dark:border-amber-800">
               <span>Estimasi Total</span>
               <span className="gradient-text">{formatCurrency(total)}</span>
             </div>

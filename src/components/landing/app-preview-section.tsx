@@ -22,7 +22,7 @@ const pets = [
     { icon: Activity, label: "Bermain", time: "13:00", done: false },
     { icon: Camera, label: "Foto", time: "15:00", done: false },
   ]},
-  { name: "Claire", breed: "British Shorthair", emoji: "🐱", image: "/images/pets/kucing/claire.jpg", tag: "Si Anggun", tagColor: "bg-violet-100 text-violet-700", status: "Menginap", checkIn: "24 Mei", duration: "3H 2J", progress: 3, total: 7, progressColor: "bg-violet-400", activities: [
+  { name: "Claire", breed: "British Shorthair", emoji: "🐱", image: "/images/pets/kucing/claire.jpg", tag: "Si Anggun", tagColor: "bg-amber-100 text-violet-700", status: "Menginap", checkIn: "24 Mei", duration: "3H 2J", progress: 3, total: 7, progressColor: "bg-amber-600", activities: [
     { icon: Utensils, label: "Makan", time: "07:45", done: true },
     { icon: Scissors, label: "Grooming", time: "09:00", done: true },
     { icon: Activity, label: "Bermain", time: "13:00", done: true },
@@ -34,7 +34,7 @@ const topStats = [
   { value: "3", label: "Pet Menginap", emoji: "🐾", color: "from-pink-400 to-rose-500" },
   { value: "2H 5J", label: "Rata-rata Durasi", emoji: "⏱️", color: "from-blue-400 to-cyan-500" },
   { value: "2/3", label: "Sudah Makan", emoji: "🍖", color: "from-green-400 to-emerald-500" },
-  { value: "8", label: "Foto Hari Ini", emoji: "📸", color: "from-purple-400 to-violet-500" },
+  { value: "8", label: "Foto Hari Ini", emoji: "📸", color: "from-amber-600 to-amber-800" },
 ];
 
 const timeline = [
@@ -190,7 +190,7 @@ export function AppPreviewSection() {
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-bold text-gray-800 dark:text-white">Pet Kesayanganmu ❤️</h4>
-                  <button className="text-xs text-purple-600 font-medium">Semua Pet ▾</button>
+                  <button className="text-xs text-amber-900 font-medium">Semua Pet ▾</button>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {pets.map((pet, i) => (
@@ -204,14 +204,14 @@ export function AppPreviewSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.4 }}
-                  className="mt-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl p-4 flex items-center gap-4 text-white"
+                  className="mt-4 bg-gradient-to-r from-amber-700 to-amber-500 rounded-2xl p-4 flex items-center gap-4 text-white"
                 >
                   <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
                     <Camera className="w-5 h-5" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="font-bold text-sm">Update setiap hari, hati jadi tenang ❤️</p>
-                    <p className="text-xs text-purple-100">Foto & laporan dikirim rutin, jadi kamu nggak ketinggalan momen mereka!</p>
+                    <p className="text-xs text-amber-100">Foto & laporan dikirim rutin, jadi kamu nggak ketinggalan momen mereka!</p>
                   </div>
                   <button className="shrink-0 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-xl transition-colors">
                     Lihat Galeri
@@ -254,7 +254,7 @@ export function AppPreviewSection() {
                       </motion.div>
                     ))}
                   </div>
-                  <button className="w-full text-xs text-purple-600 font-semibold mt-3 py-1.5 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-xl transition-colors">
+                  <button className="w-full text-xs text-amber-900 font-semibold mt-3 py-1.5 hover:bg-amber-50 dark:hover:bg-amber-900/20 rounded-xl transition-colors">
                     Lihat Semua →
                   </button>
                 </div>
@@ -263,7 +263,7 @@ export function AppPreviewSection() {
                 <div className="bg-white dark:bg-gray-900 rounded-2xl p-4 shadow-sm border border-gray-100 dark:border-gray-800">
                   <div className="flex items-center justify-between mb-2">
                     <p className="font-bold text-gray-800 dark:text-white text-sm">Momen Terbaru</p>
-                    <span className="text-xs text-purple-600 font-medium">Lihat Galeri →</span>
+                    <span className="text-xs text-amber-900 font-medium">Lihat Galeri →</span>
                   </div>
                   <div className="grid grid-cols-3 gap-1.5">
                     {["🐩", "🐕", "🐱", "🐩", "🐕"].map((e, i) => (
@@ -277,9 +277,9 @@ export function AppPreviewSection() {
                     ))}
                     <motion.div
                       whileHover={{ scale: 1.05 }}
-                      className="aspect-square rounded-xl bg-gradient-to-br from-purple-100 to-violet-100 dark:from-purple-900/20 dark:to-violet-900/20 flex items-center justify-center cursor-pointer"
+                      className="aspect-square rounded-xl bg-gradient-to-br from-amber-100 to-orange-100 dark:from-amber-900/20 dark:to-orange-900/20 flex items-center justify-center cursor-pointer"
                     >
-                      <span className="text-xs font-bold text-purple-600">+5</span>
+                      <span className="text-xs font-bold text-amber-900">+5</span>
                     </motion.div>
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export function AppPreviewSection() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
           {[
             { emoji: "📸", title: "Foto & Update Harian", desc: "Tim kami kirim foto dan laporan aktivitas setiap hari biar kamu tenang.", color: "bg-orange-50 dark:bg-orange-900/10" },
-            { emoji: "🔔", title: "Notifikasi Real-time", desc: "Dapat alert langsung saat hewanmu makan, bermain, atau butuh perhatian.", color: "bg-purple-50 dark:bg-purple-900/10" },
+            { emoji: "🔔", title: "Notifikasi Real-time", desc: "Dapat alert langsung saat hewanmu makan, bermain, atau butuh perhatian.", color: "bg-amber-50 dark:bg-amber-900/10" },
             { emoji: "📊", title: "Laporan Kesehatan", desc: "Summary lengkap kondisi hewanmu setelah setiap sesi stay atau grooming.", color: "bg-emerald-50 dark:bg-emerald-900/10" },
           ].map((f, i) => (
             <motion.div
@@ -320,7 +320,7 @@ export function AppPreviewSection() {
         >
           <p className="text-muted-foreground mb-4 text-sm">Siap coba pengalaman pet care terbaik?</p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <Button size="lg" asChild className="shadow-xl shadow-purple-500/20 group">
+            <Button size="lg" asChild className="shadow-xl shadow-amber-700/20 group">
               <Link href="/hotel">
                 Lihat Hotel Kami
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

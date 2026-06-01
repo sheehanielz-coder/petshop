@@ -11,10 +11,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "gradient-brand text-white shadow-lg shadow-purple-500/25 hover:shadow-purple-500/40 hover:scale-[1.02] active:scale-[0.98]",
+          "gradient-brand text-white shadow-lg shadow-amber-700/25 hover:shadow-amber-700/40 hover:scale-[1.02] active:scale-[0.98]",
         destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border-2 border-purple-200 bg-white text-purple-700 hover:bg-purple-50 hover:border-purple-300 dark:border-purple-800 dark:bg-transparent dark:text-purple-300 dark:hover:bg-purple-900/20",
+          "border-2 border-amber-200 bg-white text-amber-950 hover:bg-amber-50 hover:border-amber-300 dark:border-amber-800 dark:bg-transparent dark:text-amber-400 dark:hover:bg-amber-900/20",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",

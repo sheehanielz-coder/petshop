@@ -41,7 +41,7 @@ const categoryLabels: Record<RoomCategory, string> = {
 const categoryColors: Record<RoomCategory, string> = {
   STANDARD: "from-slate-500 to-gray-600",
   DELUXE: "from-amber-500 to-orange-600",
-  VIP_SUITE: "from-violet-600 to-purple-700",
+  VIP_SUITE: "from-amber-800 to-stone-900",
 };
 
 const defaultFeatures = ["Makan Harian", "Waktu Bermain", "Cek Kesehatan", "Update Aktivitas"];
@@ -83,7 +83,7 @@ export function HotelPageClient({ rooms }: Props) {
                 { icon: Wifi, label: "Feed aktivitas real-time" },
               ].map((f) => (
                 <div key={f.label} className="flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/60 text-sm font-medium text-gray-700 dark:text-gray-300">
-                  <f.icon className="w-4 h-4 text-purple-600" />
+                  <f.icon className="w-4 h-4 text-amber-900" />
                   {f.label}
                 </div>
               ))}
@@ -104,7 +104,7 @@ export function HotelPageClient({ rooms }: Props) {
                   className={cn(
                     "px-5 py-2 rounded-full text-sm font-medium transition-all",
                     activeCategory === cat.value
-                      ? "gradient-brand text-white shadow-lg shadow-purple-500/25"
+                      ? "gradient-brand text-white shadow-lg shadow-amber-700/25"
                       : "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
                   )}
                 >
@@ -169,7 +169,7 @@ export function HotelPageClient({ rooms }: Props) {
                     {/* Features */}
                     <div className="flex flex-wrap gap-1.5 mb-5">
                       {(room.features.length > 0 ? room.features : defaultFeatures).slice(0, 4).map((f) => (
-                        <span key={f} className="text-xs px-2.5 py-1 rounded-full bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400 font-medium">
+                        <span key={f} className="text-xs px-2.5 py-1 rounded-full bg-amber-50 dark:bg-amber-900/20 text-amber-950 dark:text-amber-700 font-medium">
                           {f}
                         </span>
                       ))}

@@ -118,7 +118,7 @@ export function Hero() {
             transition={{ duration: 0.6 }}
             className="flex justify-center mb-6"
           >
-            <Badge variant="purple" className="px-4 py-1.5 text-sm font-medium rounded-full border border-purple-200 dark:border-purple-800 bg-purple-50 dark:bg-purple-900/30">
+            <Badge variant="purple" className="px-4 py-1.5 text-sm font-medium rounded-full border border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/30">
               ✨ Platform Pet Premium #1 di Indonesia
             </Badge>
           </motion.div>
@@ -158,7 +158,7 @@ export function Hero() {
                 key={f.label}
                 className="flex items-center gap-2 px-4 py-2 rounded-full glass border border-white/60 dark:border-white/10 text-sm font-medium text-gray-700 dark:text-gray-300"
               >
-                <f.icon className="w-4 h-4 text-purple-600 dark:text-purple-400" />
+                <f.icon className="w-4 h-4 text-amber-900 dark:text-amber-700" />
                 {f.label}
               </div>
             ))}
@@ -171,7 +171,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
           >
-            <Button size="xl" asChild className="shadow-2xl shadow-purple-500/30 group">
+            <Button size="xl" asChild className="shadow-2xl shadow-amber-700/30 group">
               <Link href="/hotel">
                 Lihat Hotel Kami
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

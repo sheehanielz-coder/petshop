@@ -75,7 +75,7 @@ export function getMembershipColor(tier: string): string {
   switch (tier) {
     case "SILVER": return "from-slate-400 to-slate-600";
     case "GOLD": return "from-amber-400 to-amber-600";
-    case "PLATINUM": return "from-violet-500 to-purple-700";
+    case "PLATINUM": return "from-amber-700 to-stone-900";
     default: return "from-gray-400 to-gray-600";
   }
 }

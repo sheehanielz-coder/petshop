@@ -40,7 +40,7 @@ function SectionBlock({ section }: { section: BlogSection }) {
         <ul className="space-y-2 mb-4 ml-1">
           {section.items?.map((item, i) => (
             <li key={i} className="flex items-start gap-2.5 text-gray-700 dark:text-gray-300">
-              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-purple-500 shrink-0" />
+              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
               <span>{item}</span>
             </li>
           ))}
@@ -48,8 +48,8 @@ function SectionBlock({ section }: { section: BlogSection }) {
       );
     case "tip":
       return (
-        <div className="bg-purple-50 dark:bg-purple-900/20 border-l-4 border-purple-500 rounded-r-xl p-4 mb-4">
-          <p className="text-sm text-purple-800 dark:text-purple-200 leading-relaxed">{section.text}</p>
+        <div className="bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-700 rounded-r-xl p-4 mb-4">
+          <p className="text-sm text-amber-900 dark:text-amber-200 leading-relaxed">{section.text}</p>
         </div>
       );
     case "warning":
@@ -61,7 +61,7 @@ function SectionBlock({ section }: { section: BlogSection }) {
     case "quote":
       return (
         <blockquote className="relative bg-gray-50 dark:bg-gray-800 rounded-2xl p-6 my-6">
-          <div className="text-4xl text-purple-300 dark:text-purple-700 font-serif leading-none mb-2">&ldquo;</div>
+          <div className="text-4xl text-amber-400 dark:text-amber-950 font-serif leading-none mb-2">&ldquo;</div>
           <p className="text-gray-700 dark:text-gray-300 italic leading-relaxed">{section.text}</p>
         </blockquote>
       );
@@ -151,12 +151,12 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
               </div>
 
               {/* Author card */}
-              <div className="mt-8 p-5 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl border border-purple-100 dark:border-purple-800">
+              <div className="mt-8 p-5 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl border border-amber-100 dark:border-amber-800">
                 <div className="flex items-center gap-4">
                   <span className="text-4xl">{post.authorEmoji}</span>
                   <div>
                     <p className="font-bold text-gray-900 dark:text-white">{post.authorName}</p>
-                    <p className="text-sm text-purple-600 dark:text-purple-400">{post.authorRole}</p>
+                    <p className="text-sm text-amber-900 dark:text-amber-700">{post.authorRole}</p>
                     <p className="text-sm text-muted-foreground mt-1">Artikel ini ditulis oleh tim ahli Central Pet yang berdedikasi untuk memberikan informasi terbaik bagi pet owners Indonesia.</p>
                   </div>
                 </div>
@@ -171,11 +171,11 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                       <Link key={rp.slug} href={`/blog/${rp.slug}`}>
                         <motion.div
                           whileHover={{ y: -3 }}
-                          className="flex gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-800 transition-all"
+                          className="flex gap-3 p-4 bg-gray-50 dark:bg-gray-900 rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-amber-200 dark:hover:border-amber-800 transition-all"
                         >
                           <span className="text-3xl">{rp.emoji}</span>
                           <div className="min-w-0">
-                            <p className="text-sm font-semibold text-gray-900 dark:text-white line-clamp-2 group-hover:text-purple-700">{rp.title}</p>
+                            <p className="text-sm font-semibold text-gray-900 dark:text-white line-clamp-2 group-hover:text-amber-950">{rp.title}</p>
                             <p className="text-xs text-muted-foreground mt-1">{rp.readTime}</p>
                           </div>
                         </motion.div>
@@ -232,7 +232,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                     </Link>
                   ))}
                 </div>
-                <Link href="/blog" className="flex items-center gap-1 text-sm text-purple-600 dark:text-purple-400 font-medium mt-3 hover:gap-2 transition-all">
+                <Link href="/blog" className="flex items-center gap-1 text-sm text-amber-900 dark:text-amber-700 font-medium mt-3 hover:gap-2 transition-all">
                   Lihat semua artikel <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>

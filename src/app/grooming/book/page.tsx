@@ -61,7 +61,7 @@ export default function GroomingBookPage() {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-              className="w-20 h-20 rounded-2xl gradient-brand flex items-center justify-center mx-auto mb-6 shadow-xl shadow-purple-500/30"
+              className="w-20 h-20 rounded-2xl gradient-brand flex items-center justify-center mx-auto mb-6 shadow-xl shadow-amber-700/30"
             >
               <Sparkles className="w-10 h-10 text-white" />
             </motion.div>
@@ -72,7 +72,7 @@ export default function GroomingBookPage() {
             <p className="text-sm text-muted-foreground mb-8">
               Tim kami akan menghubungi kamu di <span className="font-medium">{phone}</span> dalam 1–2 jam untuk konfirmasi jadwal.
             </p>
-            <div className="bg-purple-50 dark:bg-purple-900/20 rounded-2xl p-4 text-sm text-left space-y-2 mb-8">
+            <div className="bg-amber-50 dark:bg-amber-900/20 rounded-2xl p-4 text-sm text-left space-y-2 mb-8">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Layanan</span>
                 <span className="font-medium">{selectedServiceData?.label}</span>
@@ -83,7 +83,7 @@ export default function GroomingBookPage() {
                   {new Date(selectedDate).toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" })} · {selectedTime}
                 </span>
               </div>
-              <div className="flex justify-between border-t border-purple-200 dark:border-purple-700 pt-2 font-bold">
+              <div className="flex justify-between border-t border-amber-200 dark:border-amber-700 pt-2 font-bold">
                 <span>Harga</span>
                 <span className="gradient-text">{formatCurrency(selectedServiceData?.price ?? 0)}</span>
               </div>
@@ -111,7 +111,7 @@ export default function GroomingBookPage() {
           </Link>
 
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-purple-500/20">
+            <div className="w-10 h-10 rounded-xl gradient-brand flex items-center justify-center shadow-md shadow-amber-700/20">
               <Scissors className="w-5 h-5 text-white" />
             </div>
             <div>
@@ -154,7 +154,7 @@ export default function GroomingBookPage() {
                       onClick={() => setSelectedService(s.value)}
                       className={`w-full flex items-center gap-4 p-3.5 rounded-xl border-2 text-left transition-all ${
                         selectedService === s.value
-                          ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20"
+                          ? "border-amber-700 bg-amber-50 dark:bg-amber-900/20"
                           : "border-gray-200 dark:border-gray-700 hover:border-gray-300"
                       }`}
                     >
@@ -170,7 +170,7 @@ export default function GroomingBookPage() {
                       <div className="text-right shrink-0">
                         <p className="text-sm font-bold gradient-text">{formatCurrency(s.price)}</p>
                       </div>
-                      {selectedService === s.value && <Check className="w-4 h-4 text-purple-500 shrink-0" />}
+                      {selectedService === s.value && <Check className="w-4 h-4 text-amber-800 shrink-0" />}
                     </button>
                   ))}
                 </div>
@@ -189,7 +189,7 @@ export default function GroomingBookPage() {
                     value={selectedDate}
                     onChange={(e) => setSelectedDate(e.target.value)}
                     required
-                    className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-purple-500/30 focus:border-purple-500"
+                    className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-amber-700/30 focus:border-amber-700"
                   />
                 </div>
                 <div>
@@ -202,7 +202,7 @@ export default function GroomingBookPage() {
                         onClick={() => setSelectedTime(t)}
                         className={`py-2 rounded-xl text-xs font-medium border-2 transition-all ${
                           selectedTime === t
-                            ? "border-purple-500 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-400"
+                            ? "border-amber-700 bg-amber-50 dark:bg-amber-900/20 text-amber-950 dark:text-amber-700"
                             : "border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-gray-300"
                         }`}
                       >
@@ -223,7 +223,7 @@ export default function GroomingBookPage() {
                   onChange={(e) => setSpecialRequests(e.target.value)}
                   placeholder="Alergi, preferensi, atau instruksi khusus..."
                   rows={3}
-                  className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-purple-500/30 focus:border-purple-500 resize-none"
+                  className="w-full px-3 py-2 rounded-xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-sm text-gray-900 dark:text-white placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-amber-700/30 focus:border-amber-700 resize-none"
                 />
               </CardContent>
             </Card>
@@ -236,7 +236,7 @@ export default function GroomingBookPage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 8 }}
                 >
-                  <Card className="border-purple-200 dark:border-purple-800 bg-purple-50/50 dark:bg-purple-900/10 shadow-sm">
+                  <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-900/10 shadow-sm">
                     <CardContent className="p-5 text-sm space-y-2">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Layanan</span>
@@ -248,7 +248,7 @@ export default function GroomingBookPage() {
                           {new Date(selectedDate).toLocaleDateString("id-ID", { day: "numeric", month: "long" })} · {selectedTime}
                         </span>
                       </div>
-                      <div className="flex justify-between border-t border-purple-200 dark:border-purple-700 pt-2 font-bold">
+                      <div className="flex justify-between border-t border-amber-200 dark:border-amber-700 pt-2 font-bold">
                         <span className="text-gray-900 dark:text-white">Total</span>
                         <span className="gradient-text">{formatCurrency(selectedServiceData?.price ?? 0)}</span>
                       </div>

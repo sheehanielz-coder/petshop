@@ -53,7 +53,7 @@ export default function BlogPage() {
                     </div>
                   </div>
                   <CardContent className="p-5 flex flex-col flex-1">
-                    <h2 className="text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">{blog.title}</h2>
+                    <h2 className="text-base font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-amber-950 dark:group-hover:text-amber-700 transition-colors">{blog.title}</h2>
                     {blog.excerpt && (
                       <p className="text-sm text-muted-foreground line-clamp-2 flex-1">{blog.excerpt}</p>
                     )}
@@ -67,7 +67,7 @@ export default function BlogPage() {
                         {blog.viewCount.toLocaleString()}
                       </span>
                     </div>
-                    <div className="flex items-center gap-1 text-xs font-semibold text-purple-600 dark:text-purple-400 mt-2 group-hover:gap-2 transition-all">
+                    <div className="flex items-center gap-1 text-xs font-semibold text-amber-900 dark:text-amber-700 mt-2 group-hover:gap-2 transition-all">
                       Baca selengkapnya <ArrowRight className="w-3.5 h-3.5" />
                     </div>
                   </CardContent>

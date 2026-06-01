@@ -12,8 +12,8 @@ const services = [
     description:
       "Akomodasi mewah dengan pilihan Standard, Deluxe, dan VIP Suite. Update aktivitas harian, foto, dan perawatan profesional 24/7.",
     href: "/hotel",
-    color: "from-violet-500 to-purple-600",
-    bg: "bg-violet-50 dark:bg-violet-900/20",
+    color: "from-amber-700 to-amber-900",
+    bg: "bg-amber-50 dark:bg-amber-900/20",
     features: ["Update aktivitas harian", "3 kategori kamar", "Staf terlatih"],
   },
   {
@@ -90,7 +90,7 @@ export function ServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-2xl mx-auto mb-16"
         >
-          <p className="text-sm font-semibold text-purple-600 dark:text-purple-400 uppercase tracking-wider mb-3">
+          <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-3">
             Semua Ada di Satu Tempat
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -117,7 +117,7 @@ export function ServicesSection() {
                 href={service.href}
                 className={cn(
                   "group block p-6 rounded-2xl border border-gray-100 dark:border-gray-800 card-hover",
-                  "bg-white dark:bg-gray-900 hover:border-purple-200 dark:hover:border-purple-800"
+                  "bg-white dark:bg-gray-900 hover:border-amber-200 dark:hover:border-amber-800"
                 )}
               >
                 {/* Icon */}
@@ -131,7 +131,7 @@ export function ServicesSection() {
                 </div>
 
                 {/* Content */}
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-700 dark:group-hover:text-purple-400 transition-colors">
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-amber-950 dark:group-hover:text-amber-700 transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
@@ -149,7 +149,7 @@ export function ServicesSection() {
                 </ul>
 
                 {/* Link */}
-                <div className="flex items-center gap-1 text-sm font-semibold text-purple-600 dark:text-purple-400 group-hover:gap-2 transition-all">
+                <div className="flex items-center gap-1 text-sm font-semibold text-amber-900 dark:text-amber-700 group-hover:gap-2 transition-all">
                   Pelajari lebih lanjut <ArrowRight className="w-4 h-4" />
                 </div>
               </Link>
