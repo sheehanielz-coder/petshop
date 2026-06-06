@@ -1,8 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Instagram, Heart, MessageCircle, Bookmark, ExternalLink } from "lucide-react";
+import { Heart, MessageCircle, Bookmark, ExternalLink } from "lucide-react";
 import Link from "next/link";
+
+function InstagramLogo({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+      <circle cx="12" cy="12" r="4" />
+      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
 
 const IG_URL = "https://www.instagram.com/centralpetshop.sukapura";
 const HANDLE = "@centralpetshop.sukapura";
@@ -235,7 +245,7 @@ export function InstagramSection() {
             animate={{ rotate: [0, 4, -4, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
           >
-            <Instagram className="w-8 h-8 text-white" />
+            <InstagramLogo className="w-8 h-8 text-white" />
           </motion.div>
 
           <p className="text-sm font-semibold text-amber-900 dark:text-amber-700 uppercase tracking-wider mb-2">
@@ -318,7 +328,7 @@ export function InstagramSection() {
             className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-2xl text-white font-bold text-sm shadow-xl shadow-amber-800/25 hover:shadow-amber-800/40 transition-all"
             style={{ background: "linear-gradient(135deg, #7B3519 0%, #A0522D 55%, #5B8FA8 100%)" }}
           >
-            <Instagram className="w-5 h-5" />
+            <InstagramLogo className="w-5 h-5" />
             Ikuti {HANDLE}
             <motion.span
               animate={{ x: [0, 4, 0] }}
