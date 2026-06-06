@@ -11,12 +11,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: { default: "Central Pet — Semua Kebutuhan Hewan Peliharaanmu", template: "%s | Central Pet" },
+  title: { default: "Central Petshop — Semua Kebutuhan Hewan Peliharaanmu", template: "%s | Central Petshop" },
   description:
     "Platform lengkap untuk pet owner — hotel, grooming, toko, kesehatan, pickup & delivery dalam satu tempat.",
   keywords: ["pet hotel", "grooming hewan", "pet shop", "perawatan hewan", "central pet", "pet owner"],
   openGraph: {
-    title: "Central Pet — Semua Kebutuhan Hewan Peliharaanmu",
+    title: "Central Petshop — Semua Kebutuhan Hewan Peliharaanmu",
     description: "Platform lengkap untuk pet owner — hotel, grooming, toko, kesehatan, pickup & delivery.",
     type: "website",
     locale: "id_ID",

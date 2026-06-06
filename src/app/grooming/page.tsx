@@ -8,7 +8,7 @@ import { formatCurrency } from "@/lib/utils";
 import { Scissors, Droplets, Sparkles, Check, ArrowRight } from "lucide-react";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = { title: "Grooming Hewan Peliharaan — Central Pet" };
+export const metadata: Metadata = { title: "Grooming Hewan Peliharaan — Central Petshop" };
 
 const services = [
   {

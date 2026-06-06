@@ -40,7 +40,7 @@ export function Footer() {
               <div className="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center">
                 <PawPrint className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Central Pet</span>
+              <span className="text-xl font-bold text-white">Central Petshop</span>
             </Link>
             <p className="text-sm leading-relaxed mb-6 max-w-xs">
               Platform lengkap untuk pet owner — hotel, grooming, toko, kesehatan, dan pickup & delivery dalam satu tempat.
@@ -101,7 +101,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Central Pet. All rights reserved.
+            © {new Date().getFullYear()} Central Petshop. All rights reserved.
           </p>
           <p className="text-xs text-gray-500">
             Made with ❤️ for pet lovers in Indonesia

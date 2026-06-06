@@ -193,7 +193,7 @@ export default function ContactPage() {
                   src="https://maps.google.com/maps?q=Jl.+Sukapura+No.26+Dayeuhkolot+Kabupaten+Bandung+Jawa+Barat+40267&output=embed&z=16&hl=id"
                   className="w-full h-full border-0"
                   loading="lazy"
-                  title="Lokasi Central Pet"
+                  title="Lokasi Central Petshop"
                   allowFullScreen
                 />
 
@@ -223,7 +223,7 @@ export default function ContactPage() {
                     <MapPin className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-gray-900 dark:text-white">Central Pet</p>
+                    <p className="text-xs font-bold text-gray-900 dark:text-white">Central Petshop</p>
                     <p className="text-[10px] text-amber-800 font-medium">Kantor & Layanan Utama</p>
                   </div>
                 </div>

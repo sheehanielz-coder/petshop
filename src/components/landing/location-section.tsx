@@ -33,7 +33,7 @@ export function LocationSection() {
             Temukan Kami
           </p>
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Lokasi <span className="gradient-text">Central Pet</span>
+            Lokasi <span className="gradient-text">Central Petshop</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Kami berlokasi di Bandung dan siap melayani kamu setiap hari.
@@ -147,7 +147,7 @@ export function LocationSection() {
                 src={MAPS_EMBED}
                 className="w-full h-full border-0"
                 loading="lazy"
-                title="Lokasi Central Pet — Jl. Sukapura No.26 Bandung"
+                title="Lokasi Central Petshop — Jl. Sukapura No.26 Bandung"
                 allowFullScreen
               />
 

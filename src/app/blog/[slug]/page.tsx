@@ -157,7 +157,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                   <div>
                     <p className="font-bold text-gray-900 dark:text-white">{post.authorName}</p>
                     <p className="text-sm text-amber-900 dark:text-amber-700">{post.authorRole}</p>
-                    <p className="text-sm text-muted-foreground mt-1">Artikel ini ditulis oleh tim ahli Central Pet yang berdedikasi untuk memberikan informasi terbaik bagi pet owners Indonesia.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Artikel ini ditulis oleh tim ahli Central Petshop yang berdedikasi untuk memberikan informasi terbaik bagi pet owners Indonesia.</p>
                   </div>
                 </div>
               </div>
@@ -199,7 +199,7 @@ export default function BlogPostPage({ params }: { params: Promise<{ slug: strin
                 <CardContent className="p-5">
                   <div className="text-3xl mb-3">🐾</div>
                   <h3 className="font-bold text-gray-900 dark:text-white mb-2">Siap Menitipkan Hewanmu?</h3>
-                  <p className="text-sm text-muted-foreground mb-4">Hotel, grooming, dan layanan lengkap lainnya tersedia di Central Pet.</p>
+                  <p className="text-sm text-muted-foreground mb-4">Hotel, grooming, dan layanan lengkap lainnya tersedia di Central Petshop.</p>
                   <div className="space-y-2">
                     <Button className="w-full" size="sm" asChild>
                       <Link href="/hotel">Lihat Pet Hotel <ArrowRight className="w-3.5 h-3.5" /></Link>

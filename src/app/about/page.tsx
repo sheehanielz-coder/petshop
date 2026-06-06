@@ -25,7 +25,7 @@ const team = [
 ];
 
 const milestones = [
-  { year: "2020", title: "Lahirnya Central Pet", desc: "Dimulai dari garasi dengan 3 orang dan mimpi besar.", emoji: "🚀" },
+  { year: "2020", title: "Lahirnya Central Petshop", desc: "Dimulai dari garasi dengan 3 orang dan mimpi besar.", emoji: "🚀" },
   { year: "2021", title: "1.000 Pengguna Pertama", desc: "Validasi pertama bahwa pet owners butuh solusi all-in-one.", emoji: "🎉" },
   { year: "2022", title: "Series A Funding", desc: "Ekspansi ke 5 kota besar dan launch Pet Hotel pertama.", emoji: "💰" },
   { year: "2023", title: "12.000+ Happy Pets", desc: "Platform #1 pet care di Indonesia versi App Store & Play Store.", emoji: "🏆" },
@@ -47,7 +47,7 @@ export default function AboutPage() {
                 <span className="gradient-text">Karena Cinta</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-                Central Pet lahir dari frustrasi nyata sebagai pet owner — terlalu banyak app berbeda, terlalu susah cari groomer terpercaya, terlalu khawatir saat menitipkan hewan ke hotel. Kami memutuskan untuk membangun solusinya sendiri.
+                Central Petshop lahir dari frustrasi nyata sebagai pet owner — terlalu banyak app berbeda, terlalu susah cari groomer terpercaya, terlalu khawatir saat menitipkan hewan ke hotel. Kami memutuskan untuk membangun solusinya sendiri.
               </p>
               <div className="flex flex-wrap gap-4 justify-center">
                 <div className="flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -166,7 +166,7 @@ export default function AboutPage() {
             <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
               <div className="text-5xl mb-4">🐾</div>
               <h2 className="text-3xl font-bold mb-3">Bergabunglah Bersama Kami</h2>
-              <p className="text-amber-100 mb-8">Jadilah bagian dari komunitas 12.000+ pet owner yang sudah mempercayakan perawatan hewan peliharaan mereka kepada Central Pet.</p>
+              <p className="text-amber-100 mb-8">Jadilah bagian dari komunitas 12.000+ pet owner yang sudah mempercayakan perawatan hewan peliharaan mereka kepada Central Petshop.</p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <Button size="lg" asChild className="bg-white text-amber-950 hover:bg-amber-50 shadow-xl">
                   <Link href="/hotel">Mulai Sekarang <ChevronRight className="w-4 h-4" /></Link>

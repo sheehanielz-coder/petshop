@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
         "Telinga dibersihkan setiap bulan",
         "Gigi disikat 2–3 kali seminggu",
       ]},
-      { type: "quote", text: "\"Grooming bukan sekadar soal penampilan — ini adalah bagian penting dari perawatan kesehatan kucing yang sering diabaikan.\" — Tim Groomer Central Pet" },
+      { type: "quote", text: "\"Grooming bukan sekadar soal penampilan — ini adalah bagian penting dari perawatan kesehatan kucing yang sering diabaikan.\" — Tim Groomer Central Petshop" },
     ],
   },
   {
@@ -251,7 +251,7 @@ export const blogPosts: BlogPost[] = [
       { type: "paragraph", text: "Vaksin core untuk semua kucing. Melindungi dari flu kucing dan panleukopenia (distemper kucing) yang sangat menular dan sering fatal pada anak kucing." },
       { type: "heading", text: "🦠 Rabies (untuk Kucing)" },
       { type: "paragraph", text: "Sama pentingnya dengan untuk anjing. Kucing yang dibiarkan keluar rumah WAJIB divaksin rabies. Bahkan kucing indoor pun direkomendasikan karena kecelakaan bisa terjadi." },
-      { type: "tip", text: "💡 Gunakan fitur Health Passport di Central Pet untuk menyimpan semua riwayat vaksin dan mendapatkan reminder otomatis sebelum jadwal vaksin jatuh tempo. Gratis untuk semua pengguna!" },
+      { type: "tip", text: "💡 Gunakan fitur Health Passport di Central Petshop untuk menyimpan semua riwayat vaksin dan mendapatkan reminder otomatis sebelum jadwal vaksin jatuh tempo. Gratis untuk semua pengguna!" },
       { type: "heading", text: "Vaksin Opsional (Berdasarkan Gaya Hidup)" },
       { type: "list", items: [
         "Bordetella (Kennel Cough) — wajib jika anjing sering ke hotel atau daycare",
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     slug: "healthy-pet-routine",
     excerpt: "Exercise, diet, play, and rest — how to balance it all for a happy, healthy, and well-adjusted pet.",
     category: "Pet Care",
-    authorName: "Central Pet Team",
+    authorName: "Central Petshop Team",
     authorRole: "Pet Care Specialists",
     authorEmoji: "🌟",
     publishedAt: new Date("2024-02-15"),
@@ -333,7 +333,7 @@ export const blogPosts: BlogPost[] = [
         "Jarang sakit atau membutuhkan kunjungan dokter darurat",
         "Berat badan stabil dan ideal",
       ]},
-      { type: "quote", text: "\"Rutinitas yang baik adalah hadiah terbesar yang bisa kamu berikan pada hewan peliharaanmu. Mereka tidak bisa meminta, tapi mereka selalu memberikan yang terbaik ketika kebutuhannya terpenuhi.\" — Central Pet Team" },
+      { type: "quote", text: "\"Rutinitas yang baik adalah hadiah terbesar yang bisa kamu berikan pada hewan peliharaanmu. Mereka tidak bisa meminta, tapi mereka selalu memberikan yang terbaik ketika kebutuhannya terpenuhi.\" — Central Petshop Team" },
     ],
   },
 ];

@@ -54,7 +54,7 @@ export function LandingNavbar() {
             <div className="w-9 h-9 rounded-xl gradient-brand flex items-center justify-center shadow-lg shadow-amber-700/30 group-hover:scale-110 transition-transform">
               <PawPrint className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold gradient-text hidden sm:block">Central Pet</span>
+            <span className="text-xl font-bold gradient-text hidden sm:block">Central Petshop</span>
           </Link>
 
           {/* Desktop Nav */}

@@ -39,7 +39,7 @@ export function AdminSidebar() {
           <PawPrintIcon className="w-4 h-4 text-white" />
         </div>
         <div>
-          <p className="text-xs font-bold text-white">Central Pet</p>
+          <p className="text-xs font-bold text-white">Central Petshop</p>
           <p className="text-[10px] text-gray-400">Admin Panel</p>
         </div>
       </div>

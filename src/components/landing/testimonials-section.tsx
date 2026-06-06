@@ -9,7 +9,7 @@ const testimonials = [
     role: "Dog Mom • Member Gold",
     avatar: "SW",
     rating: 5,
-    content: "Central Pet benar-benar mengubah cara aku merawat Max. Staf hotel memperlakukannya seperti raja, dan feed aktivitas harian bikin aku tenang saat business trip. Platformnya keren banget!",
+    content: "Central Petshop benar-benar mengubah cara aku merawat Max. Staf hotel memperlakukannya seperti raja, dan feed aktivitas harian bikin aku tenang saat business trip. Platformnya keren banget!",
     pet: "Max, Golden Retriever",
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     role: "Multi-pet Owner • Member Silver",
     avatar: "DK",
     rating: 5,
-    content: "Dulu booking grooming untuk 3 anjingku itu mimpi buruk. Sekarang cukup 2 menit di Central Pet. Foto grooming yang mereka kirim lucunya minta ampun!",
+    content: "Dulu booking grooming untuk 3 anjingku itu mimpi buruk. Sekarang cukup 2 menit di Central Petshop. Foto grooming yang mereka kirim lucunya minta ampun!",
     pet: "Rocky, Bella & Coco",
   },
   {
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
             <span className="gradient-text"> di Seluruh Indonesia</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Lebih dari 12.000 keluarga pet owner mempercayai Central Pet. Ini kata mereka.
+            Lebih dari 12.000 keluarga pet owner mempercayai Central Petshop. Ini kata mereka.
           </p>
         </motion.div>
 

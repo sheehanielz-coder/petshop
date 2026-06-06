@@ -23,7 +23,7 @@ export function WhatsAppButton() {
                 <span className="text-lg">🐾</span>
               </div>
               <div>
-                <p className="text-sm font-bold text-gray-900 dark:text-white">Tim Central Pet</p>
+                <p className="text-sm font-bold text-gray-900 dark:text-white">Tim Central Petshop</p>
                 <div className="flex items-center gap-1.5">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
                   <span className="text-xs text-green-600 dark:text-green-400 font-medium">Online sekarang</span>
